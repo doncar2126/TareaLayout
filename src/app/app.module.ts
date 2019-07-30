@@ -8,10 +8,16 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import { VideoComponent } from './modals/video/video.component';
 
 @NgModule({
-  declarations: [AppComponent],
-  entryComponents: [],
+  declarations: [
+    AppComponent,
+    VideoComponent,
+  ],
+  entryComponents: [
+    VideoComponent
+  ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(),
